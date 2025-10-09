@@ -1,0 +1,11 @@
+﻿:root{--bg:#0b0f17;--fg:#cfd6e6;--a:#7cf;--card:#121826;--glass:rgba(255,255,255,.06)}
+*{box-sizing:border-box}html,body{height:100%}body{margin:0;background:radial-gradient(1100px 700px at 70% 10%,#18324a 0,transparent 50%),linear-gradient(180deg,#0b0f17,#0b0f17 70%,#0d1220);color:var(--fg);font:16px/1.5 ui-sans-serif,system-ui,-apple-system,Segoe UI,Inter,Roboto}
+.nav{position:sticky;top:0;backdrop-filter:saturate(160%) blur(10px);background:var(--glass);display:flex;justify-content:space-between;align-items:center;padding:.8rem 1.2rem;border-bottom:1px solid #1d263a}
+.brand{font-weight:800;letter-spacing:.08em}.nav a{color:var(--fg);margin-left:1rem;text-decoration:none;opacity:.85}.nav a:hover{opacity:1}
+.hero{position:relative;min-height:62vh;display:grid;place-items:center;overflow:hidden}
+.hero .glow{position:absolute;inset:-20%;filter:blur(80px);background:conic-gradient(from 0deg,#5ff 0 10%,#7cf 10% 25%,#8bf 25% 40%,#05f 40% 60%,#5ff 60% 100%);opacity:.12;animation:spin 16s linear infinite}
+@keyframes spin{to{transform:rotate(1turn)}}.hero .content{text-align:center;max-width:700px;padding:2rem}
+.hero h1{font-size:clamp(2rem,4.5vw,3.5rem);line-height:1.1;margin:.3rem 0}
+.cta{display:inline-block;margin-top:1rem;padding:.8rem 1.2rem;border-radius:999px;background:linear-gradient(90deg,#09f,#7cf);color:#001326;font-weight:700;text-decoration:none}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;padding:2rem}.card{background:var(--card);border:1px solid #1d263a;border-radius:16px;padding:1rem;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+.panel{padding:2rem}.foot{opacity:.7;padding:2rem;text-align:center}
